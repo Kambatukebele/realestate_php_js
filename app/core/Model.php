@@ -9,4 +9,5 @@ trait Model
   public function update(){}
 
   public function delete(){}
+
 }

@@ -1,7 +1,7 @@
 <?php
 class Controller 
 {
-  public function view($folder, $file)
+  public function view(string $folder, string $file, array $data = [])
     {
       $FILENAME = "../app/views/" . $folder . "/" . $file . ".view.php";
 
