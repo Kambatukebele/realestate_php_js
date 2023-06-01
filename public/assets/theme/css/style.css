@@ -19,14 +19,14 @@
 body {
   background-color: var(--white-light);
 }
-.wrapper {
+/* .wrapper {
   width: 93%;
   margin: auto;
 }
 .box-all {
   width: 1270px;
   margin: auto;
-}
+} */
 
 /*
 |----------------------------------------------------------------
@@ -34,10 +34,13 @@ body {
 |---------------------------------------------------------------- 
 */
 .header {
-  width: 100%;
+  width: 98%;
   height: 74px;
+  margin: auto;
 }
-.header__all {
+.header__wrapper {
+  width: 1210px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,10 +93,15 @@ body {
   line-height: 24px;
   border-radius: 30px;
 }
+.hamburgerMenu {
+  display: none;
+}
+.hamburgerMenu__list {
+  display: none;
+}
 
 /* |------------------------ HERO ------------------------------------| */
 .hero {
-  position: relative;
   width: 98%;
   margin: auto;
   height: 67vh;
@@ -110,6 +118,10 @@ body {
   border-radius: 10px;
   display: flex;
   align-items: center;
+}
+.hero__wrapper {
+  width: 1210px;
+  margin: auto;
 }
 .hero__text {
   width: 100%;
@@ -138,16 +150,18 @@ body {
 
 /* |------------------------ SEARCH ------------------------------------| */
 .search {
-  width: 100%;
-  margin: auto;
+  width: 98%;
+  margin-top: -120px;
+  z-index: 1;
   height: 157px;
-  position: absolute;
-  top: 650px;
 }
-.search__all {
+.search__wrapper {
+  width: 1210px;
+  margin: auto;
   border-radius: 10px;
   background-color: transparent;
 }
+
 .search__buy-sell-rent {
   width: 269px;
   height: 73px;
@@ -198,7 +212,7 @@ body {
   border-bottom-left-radius: 20px;
 }
 .search__form {
-  width: 100%;
+  width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -263,3 +277,578 @@ body {
   color: var(--white);
 }
 /* |------------------------ END SEARCH ------------------------------------| */
+
+/************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+****************************************************************
+|--------------------------------------------------------------
+MEDIA QUERIES
+|--------------------------------------------------------------
+****************************************
+****************************************************************
+*/
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) and (max-width: 1518px) {
+  /* CSS */
+  body {
+    /* background-color: red; */
+  }
+
+  /* |------------------------ HERO ------------------------------------| */
+
+  .hero {
+    width: 98%;
+    margin: auto;
+    height: 100vh;
+  }
+
+  /* |------------------------ SEARCH ------------------------------------| */
+  .search {
+    width: 100%;
+    margin-top: -100px;
+    z-index: 1;
+    height: 150px;
+  }
+
+  /* |------------------------ END SEARCH ------------------------------------| */
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* CSS */
+  body {
+    background-color: green;
+  }
+  /* |------------------------ HEADER ------------------------------------| */
+  .header__wrapper {
+    width: 1000px;
+  }
+  .header__nav {
+    width: 527px;
+  }
+  /* |------------------------ END HEADER ------------------------------------| */
+  /* |------------------------ HERO ------------------------------------| */
+  .hero {
+    width: 98%;
+    margin: auto;
+    height: 100vh;
+  }
+  .hero__wrapper {
+    width: 900px;
+  }
+  .hero__text {
+    width: 900px;
+    padding-left: 10px;
+  }
+
+  .hero_description {
+    width: 400px;
+  }
+  /* |------------------------ END HERO ------------------------------------| */
+  /* |------------------------ SEARCH ------------------------------------| */
+  .search__wrapper {
+    width: 900px;
+  }
+  .search__form {
+    width: 850px;
+  }
+  .search__form--box {
+    width: 200px;
+  }
+  .search__form--text {
+    width: 200px;
+  }
+  .search__form--input {
+    width: 200px;
+  }
+  .search__form--input input,
+  .search__form--input select {
+    width: 190px;
+  }
+  .search__form--button {
+    width: 238px;
+  }
+  /* |------------------------ END SEARCH ------------------------------------| */
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */
+  body {
+    background-color: blue;
+  }
+  /* |------------------------ HEADER ------------------------------------| */
+  .header {
+    display: none;
+  }
+  /* HAMBURGER MENU */
+  .hamburgerMenu {
+    width: 98%;
+    height: 74px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamburgerMenu__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 670px;
+    margin: auto;
+  }
+  .hamburgerMenu__logo--img {
+    width: 115px;
+  }
+  .hamburgerMenu__group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hamburgerMenu__menu span,
+  .hamburgerMenu__close span {
+    font-size: 34px;
+  }
+  .hamburgerMenu__menu {
+    display: block;
+  }
+  .hamburgerMenu__close {
+    display: none;
+  }
+  .hamburgerMenu__list {
+    background-color: white;
+    width: 670px;
+    margin: auto;
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 74px;
+    z-index: 1;
+  }
+  .hamburgerMenu__list > a {
+    text-decoration: none;
+    color: var(--black);
+    list-style: none;
+  }
+  .hamburgerMenu__list > a > li {
+    font-size: 17px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 24px;
+    padding: 10px 30px;
+  }
+  .hamburgerMenu__list > a > li button {
+    background-color: var(--green);
+    border: none;
+    width: 110px;
+    height: 40px;
+    color: var(--white);
+    font-size: 17px;
+    line-height: 24px;
+    border-radius: 30px;
+  }
+  /* END HAMBURGER MENU */
+  /* |------------------------ END HEADER ------------------------------------| */
+  /* |------------------------ HERO ------------------------------------| */
+  .hero {
+    width: 98%;
+    margin: auto;
+    height: 100vh;
+  }
+  .hero__wrapper {
+    width: 670px;
+  }
+  .hero__text {
+    width: 670px;
+    padding-left: 10px;
+  }
+
+  .hero_description {
+    width: 400px;
+  }
+  /* |------------------------ END HERO ------------------------------------| */
+  /* |------------------------ SEARCH ------------------------------------| */
+  .search {
+    width: 100%;
+    margin-top: -110px;
+    z-index: 1;
+    height: 150px;
+  }
+  .search__wrapper {
+    width: 670px;
+  }
+  .search__form--all {
+    display: block;
+    height: auto;
+    padding: 20px 20px;
+  }
+  .search__form {
+    width: 670px;
+    display: block;
+    height: 450px;
+  }
+
+  .search__form--box {
+    display: block;
+    width: 620px;
+    margin: 20px 0;
+  }
+  .search__form--text {
+    width: 600px;
+    height: 20px;
+  }
+  .search__form--input {
+    width: 600px;
+    display: block;
+  }
+  .search__form--input input,
+  .search__form--input select {
+    width: 490px;
+  }
+
+  /* |------------------------ END SEARCH ------------------------------------| */
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */
+  body {
+    background-color: yellow;
+  }
+  /* |------------------------ HEADER ------------------------------------| */
+  .header {
+    display: none;
+  }
+  /* HAMBURGER MENU */
+  .hamburgerMenu {
+    width: 98%;
+    height: 74px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamburgerMenu__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 470px;
+    margin: auto;
+  }
+  .hamburgerMenu__logo--img {
+    width: 115px;
+  }
+  .hamburgerMenu__group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hamburgerMenu__menu span,
+  .hamburgerMenu__close span {
+    font-size: 34px;
+  }
+  .hamburgerMenu__menu {
+    display: block;
+  }
+  .hamburgerMenu__close {
+    display: none;
+  }
+  .hamburgerMenu__list {
+    background-color: white;
+    width: 470px;
+    margin: auto;
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 74px;
+    z-index: 1;
+  }
+  .hamburgerMenu__list > a {
+    text-decoration: none;
+    color: var(--black);
+    list-style: none;
+  }
+  .hamburgerMenu__list > a > li {
+    font-size: 17px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 24px;
+    padding: 10px 30px;
+  }
+  .hamburgerMenu__list > a > li button {
+    background-color: var(--green);
+    border: none;
+    width: 110px;
+    height: 40px;
+    color: var(--white);
+    font-size: 17px;
+    line-height: 24px;
+    border-radius: 30px;
+  }
+  /* END HAMBURGER MENU */
+  /* |------------------------ END HEADER ------------------------------------| */
+
+  /* |------------------------ HERO ------------------------------------| */
+  .hero {
+    width: 98%;
+    margin: auto;
+    height: 90vh;
+  }
+  .hero__wrapper {
+    width: 470px;
+    margin: auto;
+  }
+
+  .hero__text {
+    width: 470px;
+    padding-left: 10px;
+  }
+  .hero__title {
+    font-size: 38px;
+  }
+
+  .hero_description {
+    width: 400px;
+  }
+
+  /* |------------------------ END HERO ------------------------------------| */
+
+  /* |------------------------ SEARCH ------------------------------------| */
+  .search {
+    width: 100%;
+    margin-top: -110px;
+    z-index: 1;
+    height: 150px;
+  }
+  .search__wrapper {
+    width: 470px;
+  }
+  .search__form--all {
+    display: block;
+    height: auto;
+    padding: 20px 20px;
+  }
+  .search__form {
+    width: 470px;
+    display: block;
+    height: 590px;
+  }
+
+  .search__form--box {
+    display: block;
+    width: 420px;
+    height: 130px;
+    margin-bottom: 20px;
+  }
+  .search__form--text {
+    width: 400px;
+    height: 20px;
+  }
+  .search__form--input {
+    width: 400px;
+    display: block;
+  }
+  .search__form--input input,
+  .search__form--input select {
+    width: 400px;
+  }
+
+  /* |------------------------ END SEARCH ------------------------------------| */
+}
+
+/*  */
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS */
+  body {
+    background-color: purple;
+  }
+  .header {
+    display: none;
+  }
+  /* HAMBURGER MENU */
+  .hamburgerMenu {
+    width: 98%;
+    height: 74px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamburgerMenu__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 420px;
+    margin: auto;
+  }
+  .hamburgerMenu__logo--img {
+    width: 115px;
+  }
+  .hamburgerMenu__group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hamburgerMenu__menu span,
+  .hamburgerMenu__close span {
+    font-size: 34px;
+  }
+  .hamburgerMenu__menu {
+    display: block;
+  }
+  .hamburgerMenu__close {
+    display: none;
+  }
+  .hamburgerMenu__list {
+    background-color: white;
+    width: 470px;
+    margin: auto;
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 74px;
+    z-index: 1;
+  }
+  .hamburgerMenu__list > a {
+    text-decoration: none;
+    color: var(--black);
+    list-style: none;
+  }
+  .hamburgerMenu__list > a > li {
+    font-size: 17px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 24px;
+    padding: 10px 30px;
+  }
+  .hamburgerMenu__list > a > li button {
+    background-color: var(--green);
+    border: none;
+    width: 110px;
+    height: 40px;
+    color: var(--white);
+    font-size: 17px;
+    line-height: 24px;
+    border-radius: 30px;
+  }
+  /* END HAMBURGER MENU */
+  /* |------------------------ END HEADER ------------------------------------| */
+
+  /* |------------------------ HERO ------------------------------------| */
+  .hero {
+    width: 98%;
+    margin: auto;
+    height: 60vh;
+  }
+  .hero__wrapper {
+    width: 300px;
+    margin: auto;
+  }
+
+  .hero__text {
+    width: 300px;
+    padding-left: 10px;
+  }
+  .hero__title {
+    font-size: 23px;
+    line-height: 30px;
+  }
+
+  .hero_description {
+    width: 300px;
+    font-size: 15px;
+  }
+
+  /* |------------------------ END HERO ------------------------------------| */
+
+  /* |------------------------ SEARCH ------------------------------------| */
+  .search {
+    width: 100%;
+    margin-top: -70px;
+    z-index: 1;
+    height: 150px;
+  }
+  .search__wrapper {
+    width: 300px;
+  }
+  .search__buy-sell-rent--left {
+  }
+  .search__form--all {
+    display: block;
+    height: auto;
+    padding: 20px 20px;
+  }
+  .search__form {
+    width: 250px;
+    display: block;
+    height: 590px;
+  }
+
+  .search__form--box {
+    display: block;
+    width: 150px;
+    height: 130px;
+    margin-bottom: 20px;
+  }
+  .search__form--text {
+    width: 150px;
+    height: 20px;
+  }
+  .search__form--input {
+    width: 150px;
+    display: block;
+  }
+  .search__form--input input,
+  .search__form--input select {
+    width: 150px;
+  }
+
+  .search__buy-sell-rent {
+    width: 209px;
+  }
+  .search__buy a button,
+  .search__sell a button,
+  .search__rent a button {
+    width: 54px;
+    height: 40px;
+    padding: 8px 10px;
+  }
+
+  /* |------------------------ END SEARCH ------------------------------------| */
+}
