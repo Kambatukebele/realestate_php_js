@@ -49,6 +49,9 @@ body {
 .header__logo--img {
   width: 115px;
 }
+.header__logo--img:hover {
+  cursor: pointer;
+}
 .header__nav {
   width: 827px;
   height: 74px;
@@ -62,6 +65,10 @@ body {
 .header_link {
   text-decoration: none;
   color: var(--black);
+}
+.header_link:hover {
+  color: var(--green);
+  cursor: pointer;
 }
 .header__li {
   font-size: 17px;
@@ -92,6 +99,12 @@ body {
   font-size: 17px;
   line-height: 24px;
   border-radius: 30px;
+}
+.header__auth--signup-btn:hover,
+.header__auth--login-btn:hover {
+  background-color: var(--green);
+  opacity: 0.8;
+  cursor: pointer;
 }
 .hamburgerMenu {
   display: none;
@@ -174,9 +187,9 @@ body {
   align-items: center;
   background-color: var(--white);
 }
-.search__buy a button,
-.search__sell a button,
-.search__rent a button {
+.search__buy button,
+.search__sell button,
+.search__rent button {
   width: 74px;
   height: 40px;
   padding: 8px 24px;
@@ -185,8 +198,9 @@ body {
   font-size: 17px;
   line-height: 24px;
   color: var(--black);
+  cursor: pointer;
 }
-.search__buy-sell-rent--active a button {
+.search__buy-sell-rent--active button {
   background-color: var(--green);
   width: 74px;
   height: 40px;
@@ -275,8 +289,149 @@ body {
   font-weight: 500;
   line-height: 24px;
   color: var(--white);
+  cursor: pointer;
+}
+.search__form--button button:hover {
+  background-color: var(--green);
+  opacity: 0.8;
 }
 /* |------------------------ END SEARCH ------------------------------------| */
+/* |------------------------  LISTINGS ------------------------------------| */
+.listings {
+  margin: 170px;
+}
+.listings__wrapper {
+  width: 1230px;
+  margin: auto;
+}
+.listings__group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  width: 1210px;
+  margin-bottom: 50px;
+}
+.listing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 390px;
+  height: 533px;
+  border-left: 1px solid var(--gray-super-light);
+  border-bottom: 1px solid var(--gray-medium);
+  border-right: 1px solid var(--gray-super-light);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.listing:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: transform 2s ease-in-out;
+}
+.listing__image {
+  width: 380px;
+}
+.listing__image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+.listing__titleDiv {
+  width: 305px;
+  height: 80px;
+  margin: 20px;
+}
+.listing__titleDiv > a {
+  text-decoration: none;
+  color: var(--black);
+}
+.listing__title {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: normal;
+  font-weight: 500;
+}
+.listing__title:hover {
+  color: var(--green);
+}
+.listing__divider {
+  width: 305px;
+  margin: 20px;
+  border-bottom: 1px solid var(--gray-light);
+}
+.listing__descriptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  margin: auto;
+}
+.listing__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listing__description > .color_icon {
+  color: var(--green);
+}
+.listing__quare,
+.listing__bed,
+.listing__quare {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--black);
+  padding-left: 5px;
+}
+.listing__priceRating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 305px;
+  margin: auto;
+}
+.listing__price--group {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 100px;
+  height: 60px;
+}
+.listing__price--group__title,
+.listing__rating--group__title {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--gray-middle);
+  margin-bottom: 10px;
+}
+.listing__price--group__price {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--black);
+  font-weight: 500;
+}
+.listing__rating--group {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  height: 60px;
+}
+.listing__rating--group__stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listing__rating--group__total {
+  font-size: 17px;
+}
+
+/* |------------------------ END LISTINGS ------------------------------------| */
 
 /************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
 ****************************************************************
@@ -423,9 +578,11 @@ MEDIA QUERIES
   }
   .hamburgerMenu__menu {
     display: block;
+    cursor: pointer;
   }
   .hamburgerMenu__close {
     display: none;
+    cursor: pointer;
   }
   .hamburgerMenu__list {
     background-color: white;
@@ -576,9 +733,11 @@ MEDIA QUERIES
   }
   .hamburgerMenu__menu {
     display: block;
+    cursor: pointer;
   }
   .hamburgerMenu__close {
     display: none;
+    cursor: pointer;
   }
   .hamburgerMenu__list {
     background-color: white;
@@ -730,9 +889,11 @@ MEDIA QUERIES
   }
   .hamburgerMenu__menu {
     display: block;
+    cursor: pointer;
   }
   .hamburgerMenu__close {
     display: none;
+    cursor: pointer;
   }
   .hamburgerMenu__list {
     background-color: white;
@@ -842,9 +1003,9 @@ MEDIA QUERIES
   .search__buy-sell-rent {
     width: 209px;
   }
-  .search__buy a button,
-  .search__sell a button,
-  .search__rent a button {
+  .search__buy button,
+  .search__sell button,
+  .search__rent button {
     width: 54px;
     height: 40px;
     padding: 8px 10px;

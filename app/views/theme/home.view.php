@@ -129,10 +129,9 @@
         <div class="search__wrapper">
           <div class="search__buy-sell-rent">
             <div class="search__buy-sell-rent--left">
-              <span class="search__buy search__buy-sell-rent--active"><a href="#"><button
-                    type="button">Buy</button></a></span>
-              <span class="search__sell"><a href="#"><button type="button">Sell</button></a></span>
-              <span class="search__rent "><a href="#"><button type="button">Rent</button></a></span>
+              <span class="search__buy"><button type="button">Buy</button></span>
+              <span class="search__sell"><button type="button">Sell</button></span>
+              <span class="search__rent "><button type="button">Rent</button></span>
             </div>
           </div>
           <div class="search__form--all">
@@ -206,6 +205,390 @@
         </div>
       </section>
       <!--END SEARCH  -->
+
+      <!-- LISTING -->
+      <section class="listings">
+        <div class="listings__wrapper">
+          <div class="listings__group">
+            <div class="listing">
+              <div class="listing__image">
+                <img src="<?=ROOT_ASSETS?>theme/images/img1.jpg" alt="house_image">
+              </div>
+              <div class="listing__info">
+                <div class="listing__titleDiv">
+                  <a href="#">
+                    <h2 class="listing__title">10765 Hillshire Ave, Baton Rouge, LA 70810, USA</h2>
+                  </a>
+                </div>
+                <div class="listing__divider">
+
+                </div>
+                <div class="listing__descriptions">
+                  <div class="listing__description">
+                    <span class="material-symbols-outlined color_icon">
+                      view_in_ar
+                    </span>
+                    <span class="listing__quare">8000sqf</span>
+                  </div>
+                  <div class="listing__description">
+                    <span class="material-symbols-outlined color_icon">
+                      bed
+                    </span>
+                    <span class="listing__bed">4 Beds</span>
+                  </div>
+                  <div class="listing__description">
+                    <span class="material-symbols-outlined color_icon">
+                      bathtub
+                    </span>
+                    <span class="listing__quare">4 Baths</span>
+                  </div>
+                </div>
+                <div class="listing__divider">
+
+                </div>
+                <div class="listing__priceRating">
+                  <div class="listing__price--group">
+                    <span class="listing__price--group__title">Price</span>
+                    <span class="listing__price--group__price">$5000</span>
+                  </div>
+                  <div class="listing__rating--group">
+                    <span class="listing__rating--group__title">Rating</span>
+                    <div class="listing__rating--group__stars">
+                      <span class="material-symbols-outlined">
+                        star
+                      </span><span class="material-symbols-outlined">
+                        star
+                      </span><span class="material-symbols-outlined">
+                        star
+                      </span><span class="material-symbols-outlined">
+                        star
+                      </span><span class="material-symbols-outlined">
+                        star
+                      </span>
+                      <span class="listing__rating--group__total">(32)</span>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="listing">
+              <div class="listing__image">
+                <img src="<?=ROOT_ASSETS?>theme/images/img2.jpg" alt="house_image">
+              </div>
+              <div class="listing__info">
+                <div class="listing__titleDiv">
+                  <a href="#">
+                    <h2 class="listing__title">710 BOYD DR, Unit #1102, Baton Rouge, LA 70808, USA</h2>
+                  </a>
+                </div>
+                <div class="listing__divider">
+
+                </div>
+                <div class="listing__descriptions">
+                  <div class="listing__description">
+                    <span class="material-symbols-outlined color_icon">
+                      view_in_ar
+                    </span>
+                    <span class="listing__quare">8000sqf</span>
+                  </div>
+                  <div class="listing__description">
+                    <span class="material-symbols-outlined color_icon">
+                      bed
+                    </span>
+                    <span class="listing__bed">4 Beds</span>
+                  </div>
+                  <div class="listing__description">
+                    <span class="material-symbols-outlined color_icon">
+                      bathtub
+                    </span>
+                    <span class="listing__quare">4 Baths</span>
+                  </div>
+                </div>
+                <div class="listing__divider">
+
+                </div>
+                <div class="listing__priceRating">
+                  <div class="listing__price--group">
+                    <span class="listing__price--group__title">Price</span>
+                    <span class="listing__price--group__price">$5000</span>
+                  </div>
+                  <div class="listing__rating--group">
+                    <span class="listing__rating--group__title">Rating</span>
+                    <div class="listing__rating--group__stars">
+                      <span class="material-symbols-outlined">
+                        star
+                      </span><span class="material-symbols-outlined">
+                        star
+                      </span><span class="material-symbols-outlined">
+                        star
+                      </span><span class="material-symbols-outlined">
+                        star
+                      </span><span class="material-symbols-outlined">
+                        star
+                      </span>
+                      <span class="listing__rating--group__total">(32)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="listing">
+              <div class="listing__image">
+                <img src="<?=ROOT_ASSETS?>theme/images/img3.jpg" alt="house_image">
+              </div>
+              <div class="listing__info">
+                <div class="listing__titleDiv">
+                  <a href="#">
+                    <h2 class="listing__title">5133 MCLAIN WAY, Baton Rouge, LA 70809, USA</h2>
+                  </a>
+                </div>
+                <div class="listing__divider">
+
+                </div>
+                <div class="listing__descriptions">
+                  <div class="listing__description">
+                    <span class="material-symbols-outlined color_icon">
+                      view_in_ar
+                    </span>
+                    <span class="listing__quare">8000sqf</span>
+                  </div>
+                  <div class="listing__description">
+                    <span class="material-symbols-outlined color_icon">
+                      bed
+                    </span>
+                    <span class="listing__bed">4 Beds</span>
+                  </div>
+                  <div class="listing__description">
+                    <span class="material-symbols-outlined color_icon">
+                      bathtub
+                    </span>
+                    <span class="listing__quare">4 Baths</span>
+                  </div>
+                </div>
+                <div class="listing__divider">
+
+                </div>
+                <div class="listing__priceRating">
+                  <div class="listing__price--group">
+                    <span class="listing__price--group__title">Price</span>
+                    <span class="listing__price--group__price">$5000</span>
+                  </div>
+                  <div class="listing__rating--group">
+                    <span class="listing__rating--group__title">Rating</span>
+                    <div class="listing__rating--group__stars">
+                      <span class="material-symbols-outlined">
+                        star
+                      </span><span class="material-symbols-outlined">
+                        star
+                      </span><span class="material-symbols-outlined">
+                        star
+                      </span><span class="material-symbols-outlined">
+                        star
+                      </span><span class="material-symbols-outlined">
+                        star
+                      </span>
+                      <span class="listing__rating--group__total">(32)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="listings__group">
+            <div class="listing">
+              <div class="listing__image">
+                <img src="<?=ROOT_ASSETS?>theme/images/img1.jpg" alt="house_image">
+              </div>
+              <div class="listing__info">
+                <div class="listing__titleDiv">
+                  <a href="#">
+                    <h2 class="listing__title">10765 Hillshire Ave, Baton Rouge, LA 70810, USA</h2>
+                  </a>
+                </div>
+                <div class="listing__divider">
+
+                </div>
+                <div class="listing__descriptions">
+                  <div class="listing__description">
+                    <span class="material-symbols-outlined color_icon">
+                      view_in_ar
+                    </span>
+                    <span class="listing__quare">8000sqf</span>
+                  </div>
+                  <div class="listing__description">
+                    <span class="material-symbols-outlined color_icon">
+                      bed
+                    </span>
+                    <span class="listing__bed">4 Beds</span>
+                  </div>
+                  <div class="listing__description">
+                    <span class="material-symbols-outlined color_icon">
+                      bathtub
+                    </span>
+                    <span class="listing__quare">4 Baths</span>
+                  </div>
+                </div>
+                <div class="listing__divider">
+
+                </div>
+                <div class="listing__priceRating">
+                  <div class="listing__price--group">
+                    <span class="listing__price--group__title">Price</span>
+                    <span class="listing__price--group__price">$5000</span>
+                  </div>
+                  <div class="listing__rating--group">
+                    <span class="listing__rating--group__title">Rating</span>
+                    <div class="listing__rating--group__stars">
+                      <span class="material-symbols-outlined">
+                        star
+                      </span><span class="material-symbols-outlined">
+                        star
+                      </span><span class="material-symbols-outlined">
+                        star
+                      </span><span class="material-symbols-outlined">
+                        star
+                      </span><span class="material-symbols-outlined">
+                        star
+                      </span>
+                      <span class="listing__rating--group__total">(32)</span>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="listing">
+              <div class="listing__image">
+                <img src="<?=ROOT_ASSETS?>theme/images/img2.jpg" alt="house_image">
+              </div>
+              <div class="listing__info">
+                <div class="listing__titleDiv">
+                  <a href="#">
+                    <h2 class="listing__title">710 BOYD DR, Unit #1102, Baton Rouge, LA 70808, USA</h2>
+                  </a>
+                </div>
+                <div class="listing__divider">
+
+                </div>
+                <div class="listing__descriptions">
+                  <div class="listing__description">
+                    <span class="material-symbols-outlined color_icon">
+                      view_in_ar
+                    </span>
+                    <span class="listing__quare">8000sqf</span>
+                  </div>
+                  <div class="listing__description">
+                    <span class="material-symbols-outlined color_icon">
+                      bed
+                    </span>
+                    <span class="listing__bed">4 Beds</span>
+                  </div>
+                  <div class="listing__description">
+                    <span class="material-symbols-outlined color_icon">
+                      bathtub
+                    </span>
+                    <span class="listing__quare">4 Baths</span>
+                  </div>
+                </div>
+                <div class="listing__divider">
+
+                </div>
+                <div class="listing__priceRating">
+                  <div class="listing__price--group">
+                    <span class="listing__price--group__title">Price</span>
+                    <span class="listing__price--group__price">$5000</span>
+                  </div>
+                  <div class="listing__rating--group">
+                    <span class="listing__rating--group__title">Rating</span>
+                    <div class="listing__rating--group__stars">
+                      <span class="material-symbols-outlined">
+                        star
+                      </span><span class="material-symbols-outlined">
+                        star
+                      </span><span class="material-symbols-outlined">
+                        star
+                      </span><span class="material-symbols-outlined">
+                        star
+                      </span><span class="material-symbols-outlined">
+                        star
+                      </span>
+                      <span class="listing__rating--group__total">(32)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="listing">
+              <div class="listing__image">
+                <img src="<?=ROOT_ASSETS?>theme/images/img3.jpg" alt="house_image">
+              </div>
+              <div class="listing__info">
+                <div class="listing__titleDiv">
+                  <a href="#">
+                    <h2 class="listing__title">5133 MCLAIN WAY, Baton Rouge, LA 70809, USA</h2>
+                  </a>
+                </div>
+                <div class="listing__divider">
+
+                </div>
+                <div class="listing__descriptions">
+                  <div class="listing__description">
+                    <span class="material-symbols-outlined color_icon">
+                      view_in_ar
+                    </span>
+                    <span class="listing__quare">8000sqf</span>
+                  </div>
+                  <div class="listing__description">
+                    <span class="material-symbols-outlined color_icon">
+                      bed
+                    </span>
+                    <span class="listing__bed">4 Beds</span>
+                  </div>
+                  <div class="listing__description">
+                    <span class="material-symbols-outlined color_icon">
+                      bathtub
+                    </span>
+                    <span class="listing__quare">4 Baths</span>
+                  </div>
+                </div>
+                <div class="listing__divider">
+
+                </div>
+                <div class="listing__priceRating">
+                  <div class="listing__price--group">
+                    <span class="listing__price--group__title">Price</span>
+                    <span class="listing__price--group__price">$5000</span>
+                  </div>
+                  <div class="listing__rating--group">
+                    <span class="listing__rating--group__title">Rating</span>
+                    <div class="listing__rating--group__stars">
+                      <span class="material-symbols-outlined">
+                        star
+                      </span><span class="material-symbols-outlined">
+                        star
+                      </span><span class="material-symbols-outlined">
+                        star
+                      </span><span class="material-symbols-outlined">
+                        star
+                      </span><span class="material-symbols-outlined">
+                        star
+                      </span>
+                      <span class="listing__rating--group__total">(32)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END LISTING -->
 
     </main>
     <!-- SCRIPTS -->
