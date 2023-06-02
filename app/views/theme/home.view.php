@@ -214,6 +214,11 @@
               <div class="listing__image">
                 <img src="<?=ROOT_ASSETS?>theme/images/img1.jpg" alt="house_image">
               </div>
+              <div class="listing__save">
+                <span class="material-symbols-outlined saved__listing ">
+                  favorite
+                </span>
+              </div>
               <div class="listing__info">
                 <div class="listing__titleDiv">
                   <a href="#">
@@ -277,6 +282,11 @@
               <div class="listing__image">
                 <img src="<?=ROOT_ASSETS?>theme/images/img2.jpg" alt="house_image">
               </div>
+              <div class="listing__save">
+                <span class="material-symbols-outlined saved__listing ">
+                  favorite
+                </span>
+              </div>
               <div class="listing__info">
                 <div class="listing__titleDiv">
                   <a href="#">
@@ -338,6 +348,11 @@
             <div class="listing">
               <div class="listing__image">
                 <img src="<?=ROOT_ASSETS?>theme/images/img3.jpg" alt="house_image">
+              </div>
+              <div class="listing__save">
+                <span class="material-symbols-outlined saved__listing ">
+                  favorite
+                </span>
               </div>
               <div class="listing__info">
                 <div class="listing__titleDiv">

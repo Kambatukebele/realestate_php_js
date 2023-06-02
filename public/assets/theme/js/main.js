@@ -34,7 +34,6 @@ OpenAndCloseMenu();
 
 const buySellRentActive = () => {
   const buyBtn = _byClass("search__buy")[0];
-  console.log(buyBtn);
   const sellBtn = _byClass("search__sell")[0];
   const rentBtn = _byClass("search__rent")[0];
   const active = buyBtn.classList.add("search__buy-sell-rent--active");
@@ -56,3 +55,23 @@ const buySellRentActive = () => {
 };
 
 buySellRentActive();
+
+/**
+ * |----------------------------------------------------------------
+ * LIKED HEART ON CLICK
+ * |----------------------------------------------------------------
+ */
+
+const likedHeart = () => {
+  const listingSave = _byClass("listing__save");
+  const addRemoveClass = _byClass("addRemove"); // add and remove class action
+  const heart = _byClass("saved__listing");
+
+  for (let i = 0; i < listingSave.length; i++) {
+    listingSave[i].addEventListener("click", () => {
+      for (let j = 0; j < heart.length; j++) {}
+    });
+  }
+};
+
+likedHeart();
