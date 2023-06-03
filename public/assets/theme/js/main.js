@@ -62,16 +62,19 @@ buySellRentActive();
  * |----------------------------------------------------------------
  */
 
-const likedHeart = () => {
-  const listingSave = _byClass("listing__save");
-  const addRemoveClass = _byClass("addRemove"); // add and remove class action
-  const heart = _byClass("saved__listing");
+// const likedHeart = () => {
+//   const listingSave = _byClass("listing__save");
+//   const addRemoveClass = _byClass("addRemove"); // add and remove class action
+//   const heart = _byClass("saved__listing");
 
-  for (let i = 0; i < listingSave.length; i++) {
-    listingSave[i].addEventListener("click", () => {
-      for (let j = 0; j < heart.length; j++) {}
-    });
-  }
-};
+//   for (let i = 0; i < listingSave.length; i++) {
+//     for (let j = 0; j < heart.lengtht; j++) {
+//       console.log(heart);
+//     }
+//     // listingSave[i].addEventListener("click", () => {
+//     //   console.log(listingSave[i]);
+//     // });
+//   }
+// };
 
-likedHeart();
+// likedHeart();

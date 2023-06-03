@@ -298,7 +298,7 @@ body {
 /* |------------------------ END SEARCH ------------------------------------| */
 /* |------------------------  LISTINGS ------------------------------------| */
 .listings {
-  margin: 170px;
+  margin-top: 170px;
 }
 .listings__wrapper {
   width: 1230px;
@@ -307,7 +307,11 @@ body {
 .listings__group {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
+  grid-template-areas:
+    ". . ."
+    ". . .";
   width: 1210px;
   margin-bottom: 50px;
 }
@@ -318,6 +322,7 @@ body {
   align-items: center;
   width: 390px;
   height: 533px;
+  margin-bottom: 30px;
   border-left: 1px solid var(--gray-super-light);
   border-bottom: 1px solid var(--gray-medium);
   border-right: 1px solid var(--gray-super-light);
@@ -475,6 +480,368 @@ body {
 
 /* |------------------------ END LISTINGS ------------------------------------| */
 
+/* |------------------------ PAGINATION ------------------------------------| */
+.pagination {
+  width: 100%;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.pagination__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.pagination__arrow,
+.pagination__number {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--white-light);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.pagination__arrow:hover,
+.pagination__number:hover {
+  background-color: var(--green);
+}
+.pagination__arrow > a,
+.pagination__number > a {
+  text-decoration: none;
+  color: var(--gray-medium);
+}
+.pagination__arrow > a:hover,
+.pagination__number > a:hover {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.pagination__arrow > a > span,
+.pagination__number > a > .pagination__number--count {
+  font-size: 17px;
+}
+/* |------------------------ END PAGINATION ------------------------------------| */
+/* |------------------------  HOW IT WORKS ------------------------------------|*/
+.howitwork {
+  width: 100%;
+  margin-bottom: 100px;
+}
+.howitwork__wrapper {
+  width: 1230px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.howitwork__introduction {
+  max-width: 600px;
+  width: 100%;
+}
+.howitwork__title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+  color: var(--black);
+  height: 45px;
+  margin-bottom: 16px;
+}
+
+.howitwork__describtion {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--gray-middle);
+  height: 55px;
+}
+.howitwork__steps {
+  width: 1120px;
+  height: 300px;
+  margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px 0px;
+}
+.howitwork__evaluate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.howitwork__icon {
+  /* display: flex;
+  justify-content: center;
+  align-items: start; */
+  width: 36px;
+  height: 90px;
+}
+.howitwork__icon > span {
+  font-size: 36px;
+  height: 42px;
+  color: var(--green);
+}
+.howitwork__textBundle {
+  width: 273px;
+  height: 28px;
+}
+.howitwork__textBundle h3 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  color: var(--black);
+  text-align: center;
+}
+.howitwork__textBundle p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--gray-medium);
+  text-align: center;
+  margin-top: 12px;
+}
+/* |------------------------  END HOW IT WORKS ------------------------------------|*/
+
+/* |------------------------  TESTIMONIALS ------------------------------------|*/
+.testimonials {
+  width: 100%;
+  margin-bottom: 100px;
+}
+.testimonials__wrapper {
+  width: 1230px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials__introduction {
+  max-width: 600px;
+  width: 100%;
+}
+.testimonials__title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+  color: var(--black);
+  height: 45px;
+  margin-bottom: 16px;
+}
+
+.testimonials__describtion {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--gray-middle);
+  height: 55px;
+}
+
+.testimonials__fromClients {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 350px;
+}
+.testimonials__text {
+  width: 100%;
+  height: 120px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials__text--quoteStart {
+  font-size: 90px;
+  transform: rotate(-180deg);
+  position: absolute;
+  top: -60px;
+  left: -80px;
+  color: var(--gray-medium);
+}
+.testimonials__text--quoteEnd {
+  font-size: 90px;
+  position: absolute;
+  bottom: -60px;
+  right: -80px;
+  color: var(--gray-medium);
+}
+.testimonials__text > p {
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--gray-middle);
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+}
+.testimonials__image {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 350px;
+}
+.testimonials__image > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.testimonials__image > h5 {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--black);
+  margin-top: 10px;
+}
+.testimonials__image > p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--gray-middle);
+}
+/* |------------------------  END TESTIMONIALS ------------------------------------|*/
+
+/* |------------------------  QUESTION ------------------------------------|*/
+.question {
+  width: 100%;
+  margin-bottom: 100px;
+}
+.question__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.question__introduction {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.question__title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+  color: var(--black);
+  height: 45px;
+  margin-bottom: 16px;
+}
+
+.question__describtion {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--gray-middle);
+  height: 55px;
+}
+.question__introduction > a {
+  text-decoration: none;
+  margin-top: 20px;
+}
+.question__introduction > a > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--green);
+  border: none;
+  width: 130px;
+  height: 40px;
+  color: var(--white);
+  font-size: 17px;
+  line-height: 24px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.question__introduction > a > button:hover {
+  opacity: 0.8;
+}
+.question__introduction > a > button > span {
+  font-size: 19px;
+  margin: 0 5px;
+}
+/* |------------------------  END QUESTION ------------------------------------|*/
+/* |------------------------   NEWS LETTER ------------------------------------|*/
+.newsletter {
+  width: 100%;
+  margin-bottom: 100px;
+}
+.newsletter__wrapper {
+  max-width: 1120px;
+  background-color: var(--white);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 134px;
+  border-radius: 10px;
+  padding: 0 20px;
+}
+.newsletter__text {
+  width: 513px;
+  height: 45px;
+}
+.newsletter__text h4 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 45px;
+  color: var(--black);
+  line-height: 45px;
+}
+.newsletter__text p {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 45px;
+  line-height: 28px;
+  color: var(--gray-medium);
+}
+.newsletter__input {
+  width: 512px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter__input input {
+  width: 388px;
+  height: 46px;
+  background-color: transparent;
+  padding-left: 5px;
+  border: none;
+  outline: nono;
+}
+.newsletter__input button {
+  width: 124px;
+  height: 46px;
+  background-color: var(--green);
+  border: none;
+  color: var(--white);
+  border-radius: 50px;
+}
+/* |------------------------  END NEWS LETTER ------------------------------------|*/
+
 /************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
 ****************************************************************
 |--------------------------------------------------------------
@@ -491,7 +858,7 @@ MEDIA QUERIES
 @media (min-width: 1281px) and (max-width: 1518px) {
   /* CSS */
   body {
-    /* background-color: red; */
+    background-color: red;
   }
 
   /* |------------------------ HERO ------------------------------------| */
@@ -573,6 +940,43 @@ MEDIA QUERIES
     width: 238px;
   }
   /* |------------------------ END SEARCH ------------------------------------| */
+  /* |------------------------  LISTINGS ------------------------------------| */
+
+  .listings__wrapper {
+    width: 900px;
+    margin: auto;
+  }
+  .listings__group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". ."
+      ". .";
+    width: 900px;
+    margin: auto;
+  }
+
+  /* |------------------------  END LISTINGS ------------------------------------| */
+
+  /* |------------------------  HOW IT WORKS ------------------------------------|*/
+  .howitwork__wrapper {
+    width: 900px;
+  }
+  .howitwork__steps {
+    width: 900px;
+  }
+
+  /* |------------------------  END HOW IT WORKS ------------------------------------|*/
+
+  /* |------------------------  TESTIMONIALS ------------------------------------|*/
+
+  .testimonials__wrapper {
+    width: 670px;
+  }
+
+  /* |------------------------  END TESTIMONIALS ------------------------------------|*/
 }
 
 /* 
@@ -719,6 +1123,62 @@ MEDIA QUERIES
   }
 
   /* |------------------------ END SEARCH ------------------------------------| */
+  /* |------------------------  LISTINGS ------------------------------------| */
+
+  .listings {
+    margin-top: 570px;
+  }
+  .listings__wrapper {
+    width: 670px;
+  }
+  .listing__save {
+    top: 30px;
+    right: 13px;
+  }
+  .listings__group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". ."
+      ". .";
+    width: 670px;
+    margin: auto;
+  }
+  .listing {
+    width: 330px;
+    height: 533px;
+  }
+
+  .listing__image {
+    width: 320px;
+  }
+
+  /* |------------------------  END LISTINGS ------------------------------------| */
+
+  /* |------------------------  HOW IT WORKS ------------------------------------|*/
+  .howitwork__wrapper {
+    width: 670px;
+  }
+  .howitwork__steps {
+    width: 670px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". ."
+      ". .";
+    height: 600px;
+  }
+  /* |------------------------  END HOW IT WORKS ------------------------------------|*/
+  /* |------------------------  TESTIMONIALS ------------------------------------|*/
+
+  .testimonials__wrapper {
+    width: 670px;
+  }
+  /* |------------------------  END TESTIMONIALS ------------------------------------|*/
 }
 
 /* 
@@ -858,7 +1318,7 @@ MEDIA QUERIES
     padding: 20px 20px;
   }
   .search__form {
-    width: 470px;
+    width: 420px;
     display: block;
     height: 590px;
   }
@@ -883,6 +1343,119 @@ MEDIA QUERIES
   }
 
   /* |------------------------ END SEARCH ------------------------------------| */
+  /* |------------------------  LISTINGS ------------------------------------| */
+  .listings {
+    margin-top: 670px;
+  }
+  .listings__wrapper {
+    width: 470px;
+  }
+  .listing__save {
+    top: 35px;
+    right: 15px;
+  }
+  .listings__group {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "."
+      "."
+      "."
+      "."
+      "."
+      ".";
+    width: 450px;
+    margin: auto;
+  }
+  .listing {
+    width: 330px;
+    height: 533px;
+    margin: auto;
+  }
+
+  .listing__image {
+    width: 310px;
+  }
+
+  /* |------------------------  END LISTINGS ------------------------------------| */
+  /* |------------------------  PAGINATION ------------------------------------| */
+  .pagination {
+    width: 420px;
+    margin: auto;
+    height: 100px;
+  }
+  /* |------------------------  PAGINATION ------------------------------------| */
+
+  /* |------------------------  HOW IT WORKS ------------------------------------|*/
+  .howitwork {
+    margin-top: 50px;
+  }
+  .howitwork__wrapper {
+    width: 470px;
+  }
+  .howitwork__introduction {
+    max-width: 370px;
+    width: 100%;
+  }
+
+  .howitwork__describtion {
+    width: 370px;
+  }
+  .howitwork__steps {
+    width: 470px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "."
+      "."
+      ".";
+    height: 900px;
+  }
+
+  /* |------------------------  END HOW IT WORKS ------------------------------------|*/
+
+  /* |------------------------  TESTIMONIALS ------------------------------------|*/
+
+  .testimonials__wrapper {
+    width: 470px;
+  }
+  .testimonials__introduction {
+    max-width: 400px;
+    width: 100%;
+  }
+  .testimonials__describtion {
+    width: 400px;
+  }
+  .testimonials__text--quoteStart {
+    font-size: 70px;
+    transform: rotate(-180deg);
+    position: absolute;
+    top: -60px;
+    left: -60px;
+    color: var(--gray-medium);
+  }
+  .testimonials__text--quoteEnd {
+    font-size: 70px;
+    position: absolute;
+    bottom: -60px;
+    right: -60px;
+    color: var(--gray-medium);
+  }
+  /* |------------------------  END TESTIMONIALS ------------------------------------|*/
+
+  /* |------------------------  QUESTION ------------------------------------|*/
+
+  .question__introduction {
+    max-width: 400px;
+  }
+  .question__describtion {
+    width: 400px;
+  }
+  /* |------------------------  END QUESTION ------------------------------------|*/
 }
 
 /*  */
@@ -1003,14 +1576,12 @@ MEDIA QUERIES
   /* |------------------------ SEARCH ------------------------------------| */
   .search {
     width: 100%;
-    margin-top: -70px;
+    margin-top: 0px;
     z-index: 1;
     height: 150px;
   }
   .search__wrapper {
     width: 300px;
-  }
-  .search__buy-sell-rent--left {
   }
   .search__form--all {
     display: block;
@@ -1054,4 +1625,134 @@ MEDIA QUERIES
   }
 
   /* |------------------------ END SEARCH ------------------------------------| */
+  /* |------------------------  LISTINGS ------------------------------------| */
+  .listings {
+    margin-top: 670px;
+  }
+  .listings__wrapper {
+    width: 300px;
+  }
+  .listing__save {
+    top: 55px;
+    right: 15px;
+  }
+  .listings__group {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "."
+      "."
+      "."
+      "."
+      "."
+      ".";
+    width: 300px;
+    margin: auto;
+  }
+  .listing {
+    width: 300px;
+    height: 533px;
+    margin: auto;
+  }
+
+  .listing__image {
+    width: 290px;
+  }
+  .listing__priceRating {
+    width: 275px;
+  }
+  .listing__titleDiv {
+    width: 250px;
+    height: 80px;
+    margin: auto;
+  }
+
+  /* |------------------------  END LISTINGS ------------------------------------| */
+
+  /* |------------------------  PAGINATION ------------------------------------| */
+  .pagination {
+    margin: 10px;
+  }
+  /* |------------------------  PAGINATION ------------------------------------| */
+
+  /* |------------------------  HOW IT WORKS ------------------------------------|*/
+  .howitwork {
+    margin-top: 50px;
+  }
+  .howitwork__wrapper {
+    width: 300px;
+  }
+  .howitwork__introduction {
+    max-width: 300px;
+    width: 100%;
+  }
+  .howitwork__describtion {
+    width: 300px;
+  }
+  .howitwork__steps {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "."
+      "."
+      ".";
+    height: 900px;
+  }
+
+  /* |------------------------  END HOW IT WORKS ------------------------------------|*/
+
+  /* |------------------------  TESTIMONIALS ------------------------------------|*/
+
+  .testimonials__wrapper {
+    width: 300px;
+  }
+  .testimonials__introduction {
+    max-width: 300px;
+    width: 100%;
+  }
+  .testimonials__describtion {
+    width: 280px;
+  }
+
+  .testimonials__fromClients {
+    max-width: 300px;
+  }
+  .testimonials__text--quoteStart {
+    font-size: 30px;
+    transform: rotate(-180deg);
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    color: var(--gray-medium);
+  }
+  .testimonials__text--quoteEnd {
+    font-size: 30px;
+    position: absolute;
+    bottom: -20px;
+    right: 5px;
+    color: var(--gray-medium);
+  }
+  .testimonials__image {
+    max-width: 300px;
+  }
+
+  /* |------------------------  END TESTIMONIALS ------------------------------------|*/
+
+  /* |------------------------  QUESTION ------------------------------------|*/
+  .question__title {
+    height: 90px;
+  }
+  .question__introduction {
+    max-width: 300px;
+  }
+  .question__describtion {
+    width: 300px;
+    height: 90px;
+  }
+  /* |------------------------  END QUESTION ------------------------------------|*/
 }
