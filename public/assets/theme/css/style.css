@@ -941,6 +941,7 @@ body {
 hr {
   color: var(--gray-super-light2);
   width: 100%;
+  opacity: 0.1;
 }
 .footer__company__adress--icon > span {
   color: var(--green);
@@ -984,9 +985,9 @@ MEDIA QUERIES
 
 @media (min-width: 1281px) and (max-width: 1518px) {
   /* CSS */
-  body {
+  /* body {
     background-color: red;
-  }
+  } */
 
   /* |------------------------ HERO ------------------------------------| */
 
@@ -1014,9 +1015,9 @@ MEDIA QUERIES
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   /* CSS */
-  body {
+  /* body {
     background-color: green;
-  }
+  } */
   /* |------------------------ HEADER ------------------------------------| */
   .header__wrapper {
     width: 1000px;
@@ -1104,6 +1105,75 @@ MEDIA QUERIES
   }
 
   /* |------------------------  END TESTIMONIALS ------------------------------------|*/
+
+  /* |------------------------   NEWS LETTER ------------------------------------|*/
+  .newsletter__wrapper {
+    width: 900px;
+  }
+  /* |------------------------  END NEWS LETTER ------------------------------------|*/
+  /* |------------------------  FOOTER ------------------------------------|*/
+  .footer__wrapper {
+    width: 900px;
+    gap: 0px 0px;
+  }
+  .footer__logo {
+    width: 250px;
+    height: 254px;
+  }
+  .footer__company {
+    width: 160px;
+    height: 254px;
+  }
+  .footer__company__adress--location {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 24px;
+    width: 257px;
+    height: 108px;
+  }
+  .footer__company__adress--contact,
+  .footer__company__adress--call {
+    margin-top: 24px;
+    width: 254px;
+    height: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer__company__adress {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 257px;
+    height: 70px;
+    margin-top: 24px;
+  }
+  hr {
+    color: var(--gray-super-light2);
+    width: 100%;
+    opacity: 0.1;
+    width: 900px;
+  }
+  .footer__company__adress--icon > span {
+    color: var(--green);
+  }
+  .footer__company__adress--adress {
+    color: var(--white);
+  }
+  .footer__company__adress--adress h4 {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--white);
+    height: 76px;
+    margin-bottom: 8px;
+  }
+  .footer__wrapper2 {
+    width: 900px;
+  }
+
+  /* |------------------------  END FOOTER ------------------------------------|*/
 }
 
 /* 
@@ -1113,9 +1183,9 @@ MEDIA QUERIES
 
 @media (min-width: 768px) and (max-width: 1024px) {
   /* CSS */
-  body {
+  /* body {
     background-color: blue;
-  }
+  } */
   /* |------------------------ HEADER ------------------------------------| */
   .header {
     display: none;
@@ -1306,6 +1376,84 @@ MEDIA QUERIES
     width: 670px;
   }
   /* |------------------------  END TESTIMONIALS ------------------------------------|*/
+
+  /* |------------------------   NEWS LETTER ------------------------------------|*/
+  .newsletter__wrapper {
+    width: 570px;
+    flex-direction: column;
+    height: 210px;
+    padding: 20px 0;
+  }
+  .newsletter__text {
+    width: 413px;
+    height: 145px;
+    margin-bottom: 50px;
+  }
+  .newsletter__text h4 {
+    text-align: center;
+  }
+  .newsletter__text p {
+    text-align: center;
+  }
+  .newsletter__input {
+    width: 412px;
+  }
+  /* |------------------------  END NEWS LETTER ------------------------------------|*/
+  /* |------------------------  FOOTER ------------------------------------|*/
+  .footer {
+    height: 790px;
+    display: block;
+  }
+  .footer__wrapper {
+    width: 670px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". ."
+      ". .";
+    height: 638px;
+    align-items: center;
+  }
+  .footer__logo {
+    width: 320px;
+    height: 254px;
+  }
+  .footer__company {
+    width: 320px;
+    height: 254px;
+  }
+  .footer__company__list {
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer__company__adress--location {
+    width: 320px;
+  }
+  .footer__company__adress--contact,
+  .footer__company__adress--call {
+    width: 320px;
+    height: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  hr {
+    width: 670px;
+    margin-top: 50px;
+  }
+  .footer__company2 {
+    width: 320px;
+  }
+  .footer__wrapper2 {
+    width: 670px;
+    margin: auto;
+  }
+  /* |------------------------  END FOOTER ------------------------------------|*/
 }
 
 /* 
@@ -1324,9 +1472,9 @@ MEDIA QUERIES
 
 @media (min-width: 481px) and (max-width: 767px) {
   /* CSS */
-  body {
+  /* body {
     background-color: yellow;
-  }
+  } */
   /* |------------------------ HEADER ------------------------------------| */
   .header {
     display: none;
@@ -1583,6 +1731,105 @@ MEDIA QUERIES
     width: 400px;
   }
   /* |------------------------  END QUESTION ------------------------------------|*/
+
+  /* |------------------------   NEWS LETTER ------------------------------------|*/
+  .newsletter__wrapper {
+    width: 470px;
+    flex-direction: column;
+    height: 210px;
+    padding: 20px 0;
+  }
+  .newsletter__text {
+    width: 413px;
+    height: 145px;
+    margin-bottom: 50px;
+  }
+  .newsletter__text h4 {
+    text-align: center;
+  }
+  .newsletter__text p {
+    text-align: center;
+  }
+  .newsletter__input {
+    width: 412px;
+  }
+  /* |------------------------  END NEWS LETTER ------------------------------------|*/
+  /* |------------------------  FOOTER ------------------------------------|*/
+  .footer {
+    justify-content: space-between;
+    height: 1280px;
+  }
+  .footer__wrapper {
+    width: 470px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "."
+      "."
+      "."
+      ".";
+    height: 1180px;
+    align-items: center;
+  }
+  .footer__logo {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer__logo p {
+    width: 350px;
+  }
+  .footer__company {
+    width: 470px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  .footer__company__list {
+    width: 470px;
+    margin-top: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer__company__adress--location {
+    justify-content: center;
+    width: 470px;
+    height: 140px;
+  }
+  .footer__company__adress--contact,
+  .footer__company__adress--call {
+    /* margin-top: 24px; */
+    width: 470px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  hr {
+    width: 470px;
+    margin-top: 50px;
+  }
+  .footer__company2 {
+    width: 470px;
+    height: 280px;
+    /* margin-bottom: 100px; */
+  }
+  .footer__company__adress--icon > span {
+    /* color: var(--green); */
+    padding-right: 15px;
+  }
+  .footer__wrapper2 {
+    width: 470px;
+    margin: auto;
+  }
+  /* |------------------------  END FOOTER ------------------------------------|*/
 }
 
 /*  */
@@ -1594,9 +1841,9 @@ MEDIA QUERIES
 
 @media (min-width: 320px) and (max-width: 480px) {
   /* CSS */
-  body {
+  /* body {
     background-color: purple;
-  }
+  } */
   .header {
     display: none;
   }
@@ -1882,4 +2129,157 @@ MEDIA QUERIES
     height: 90px;
   }
   /* |------------------------  END QUESTION ------------------------------------|*/
+
+  /* |------------------------   NEWS LETTER ------------------------------------|*/
+  .newsletter {
+    width: 100%;
+    margin-bottom: 100px;
+    background-color: red;
+    height: 350px;
+  }
+  .newsletter__wrapper {
+    width: 300px;
+    flex-direction: column;
+    height: 290px;
+    padding: 20px 0;
+    background-color: #dc2626;
+  }
+  .newsletter__text {
+    width: 300px;
+    height: 145px;
+    margin-bottom: 50px;
+  }
+  .newsletter__text h4 {
+    background-color: royalblue;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+  }
+  .newsletter__text p {
+    text-align: center;
+  }
+  .newsletter__input {
+    width: 300px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: red;
+  }
+  .newsletter__input input {
+    width: 300px;
+    height: 46px;
+    background-color: transparent;
+    padding-left: 5px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+  }
+  .newsletter__input button {
+    width: 300px;
+    height: 46px;
+    background-color: var(--green);
+    border: none;
+    color: var(--white);
+    border-radius: 50px;
+  }
+  /* |------------------------  END NEWS LETTER ------------------------------------|*/
+  /* |------------------------  FOOTER ------------------------------------|*/
+  .footer {
+    justify-content: space-between;
+    height: 1280px;
+  }
+  .footer__wrapper {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "."
+      "."
+      "."
+      ".";
+    height: 1180px;
+    align-items: center;
+  }
+  .footer__logo {
+    width: 300px;
+    height: 170px;
+    display: block;
+    background-color: red;
+  }
+  .footer__logo p {
+    width: 300px;
+    height: 100px;
+    text-align: center;
+  }
+  .footer__company {
+    width: 300px;
+    height: 210px;
+  }
+  .footer__company--title > h4 {
+    width: 200px;
+    margin: auto;
+    background-color: #eab308;
+    margin-bottom: 20px;
+  }
+  .footer__company__list {
+    width: 300px;
+    margin-top: 0px;
+    display: block;
+  }
+  .footer__company__list > a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--white-light);
+    width: 300px;
+    height: 24px;
+  }
+  .footer__company__list > a > li {
+    width: 300px;
+    height: 34px;
+  }
+  .footer__company__adress--location {
+    justify-content: center;
+    width: 300px;
+    height: 140px;
+    background-color: rebeccapurple;
+  }
+  .footer__company__adress--contact,
+  .footer__company__adress--call {
+    /* margin-top: 24px; */
+    width: 300px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+  }
+  hr {
+    width: 300px;
+    margin-top: 50px;
+  }
+  .footer__company2 {
+    width: 300px;
+    height: 280px;
+    background-color: gray;
+    display: block;
+  }
+  .footer__company__adress--icon > span {
+    padding-right: 15px;
+  }
+
+  .footer__wrapper2 {
+    width: 250px;
+    margin: auto;
+    display: block;
+  }
+  .footer__designedBy > p {
+    color: var(--white);
+    background-color: red;
+    text-align: center;
+  }
+  /* |------------------------  END FOOTER ------------------------------------|*/
 }
