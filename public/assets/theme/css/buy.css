@@ -1,0 +1,370 @@
+:root {
+  --black: #000000;
+  --middle-blue: #94a3b8;
+  --semi-blue: #161c2d;
+  --strong-blue: #0f172a;
+  --gray-middle: #9ca3af;
+  --gray-medium: #cbd5e1;
+  --gray-light: #d1d5db;
+  --gray-super-light: #f1f5f9;
+  --gray-super-light2: #f3f4f6;
+  --white-light: #f9fafb;
+  --white: #ffffff;
+  --green: #16a34a;
+  --orange: #dc2626;
+  --yellow: #eab308;
+  --yellow2: #fbbf24;
+}
+
+body {
+  background-color: var(--white-light);
+}
+/*
+|----------------------------------------------------------------
+  Desktop 
+|---------------------------------------------------------------- 
+*/
+/* |------------------------ HEROBuy ------------------------------------| */
+.heroBuy {
+  width: 98%;
+  margin: auto;
+  height: 50vh;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.5998774509803921) 0%,
+      rgba(0, 0, 0, 0.41780462184873945) 35%,
+      rgba(0, 0, 0, 0.2413340336134454) 100%
+    ),
+    url("../images/back1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroBuy__wrapper {
+  width: 1210px;
+  margin: auto;
+  height: auto;
+}
+.heroBuy__text {
+  width: 100%;
+  height: 144px;
+}
+.heroBuy__title {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 72px;
+}
+
+/* |------------------------ end HEROBuy ------------------------------------| */
+/* |------------------------ SEARCH ------------------------------------| */
+.searchBuy {
+  width: 98%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchBuy__wrapper {
+  width: 1210px;
+  margin: auto;
+  height: 250px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.searchBuy__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  max-width: 600px;
+  width: 100%;
+  height: 55px;
+  margin: auto;
+  background-color: var(--white);
+  padding: 20px 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.searchBuy__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  background-color: transparent;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.searchBuy__input > input {
+  width: 440px;
+  height: 45px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  background-color: transparent;
+}
+.searchBuy__btn {
+  width: 130px;
+  height: 45px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchBuy__btn button {
+  width: 130px;
+  height: 45px;
+  border: none;
+  color: var(--white);
+  line-height: 24px;
+  font-size: 17px;
+  font-weight: 500;
+  background-color: var(--green);
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+/* |------------------------ END SEARCH ------------------------------------| */
+.listingsBuy {
+  margin-top: 0px;
+}
+
+/************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+****************************************************************
+|--------------------------------------------------------------
+MEDIA QUERIES
+|--------------------------------------------------------------
+****************************************
+****************************************************************
+*/
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) and (max-width: 1518px) {
+  /* CSS */
+  body {
+    background-color: red;
+  }
+
+  /* |------------------------ HERO ------------------------------------| */
+
+  .heroBuy {
+    width: 98%;
+    margin: auto;
+    height: 50vh;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* CSS */
+  body {
+    background-color: green;
+  }
+
+  /* |------------------------ HERO ------------------------------------| */
+  .heroBuy {
+    width: 98%;
+    margin: auto;
+    height: 50vh;
+  }
+  .heroBuy__wrapper {
+    width: 900px;
+  }
+  .heroBuy__text {
+    width: 900px;
+    padding-left: 10px;
+  }
+
+  /* |------------------------ END HERO ------------------------------------| */
+
+  /* |------------------------ SEARCH ------------------------------------| */
+  .searchBuy__wrapper {
+    width: 900px;
+    margin: auto;
+    border-radius: 10px;
+  }
+
+  /* |------------------------ END SEARCH ------------------------------------| */
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */
+  body {
+    background-color: blue;
+  }
+
+  /* |------------------------ HERO ------------------------------------| */
+  .heroBuy {
+    width: 98%;
+    margin: auto;
+    height: 50vh;
+  }
+  .heroBuy__wrapper {
+    width: 670px;
+  }
+  .heroBuy__text {
+    width: 670px;
+    padding-left: 10px;
+  }
+
+  /* |------------------------ END HERO ------------------------------------| */
+
+  /* |------------------------ SEARCH ------------------------------------| */
+  .searchBuy__wrapper {
+    width: 670px;
+    margin: auto;
+    border-radius: 10px;
+  }
+
+  /* |------------------------ END SEARCH ------------------------------------| */
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */
+  body {
+    background-color: yellow;
+  }
+
+  /* |------------------------ HERO ------------------------------------| */
+  .heroBuy {
+    width: 98%;
+    margin: auto;
+    height: 50vh;
+  }
+  .heroBuy__wrapper {
+    width: 470px;
+    margin: auto;
+  }
+
+  .heroBuy__text {
+    width: 470px;
+    padding-left: 10px;
+  }
+  .heroBuy__title {
+    font-size: 38px;
+  }
+
+  /* |------------------------ END HERO ------------------------------------| */
+  /* |------------------------ SEARCH ------------------------------------| */
+
+  .searchBuy__wrapper {
+    width: 470px;
+  }
+  .searchBuy__form {
+    max-width: 400px;
+  }
+
+  .searchBuy__input > input {
+    width: 260px;
+  }
+  .searchBuy__btn {
+    width: 100px;
+  }
+  .searchBuy__btn button {
+    width: 130px;
+  }
+
+  /* |------------------------ END SEARCH ------------------------------------| */
+}
+
+/*  */
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS */
+  body {
+    background-color: purple;
+  }
+
+  /* |------------------------ HERO ------------------------------------| */
+  .heroBuy {
+    width: 98%;
+    margin: auto;
+    height: 20vh;
+  }
+  .heroBuy__wrapper {
+    width: 300px;
+    margin: auto;
+  }
+
+  .heroBuy__text {
+    width: 300px;
+    padding-left: 10px;
+    margin-top: 30px;
+  }
+  .heroBuy__title {
+    font-size: 23px;
+    line-height: 30px;
+  }
+
+  /* |------------------------ END HERO ------------------------------------| */
+
+  /* |------------------------ SEARCH ------------------------------------| */
+  .searchBuy {
+    width: 98%;
+    height: 157px;
+    margin-top: -30px;
+  }
+  .searchBuy__wrapper {
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+  }
+  .searchBuy__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    max-width: 300px;
+    width: 100%;
+    height: 55px;
+    margin: auto;
+    background-color: var(--white);
+    padding: 20px 0;
+  }
+
+  .searchBuy__input > input {
+    width: 200px;
+  }
+  .searchBuy__btn {
+    width: 60px;
+  }
+
+  /* |------------------------ END SEARCH ------------------------------------| */
+}

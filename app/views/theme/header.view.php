@@ -19,6 +19,7 @@
     <!-- CSS  -->
     <link rel="stylesheet" href="<?=ROOT_ASSETS?>theme/css/reset.css" />
     <link rel="stylesheet" href="<?=ROOT_ASSETS?>theme/css/style.css" />
+    <link rel="stylesheet" href="<?=ROOT_ASSETS?>theme/css/buy.css" />
     <!-- END CSS  -->
     <title><?= $data['page_title'];?></title>
   </head>
@@ -33,10 +34,10 @@
           </div>
           <nav class="header__nav">
             <ul class="header__ul">
-              <a href="#" class="header_link">
+              <a href="<?=ROOT?>" class="header_link">
                 <li class="header__li">Home</li>
               </a>
-              <a href="#" class="header_link">
+              <a href="<?=ROOT?>buy" class="header_link">
                 <li class="header__li">Buy</li>
               </a>
               <a href="#" class="header_link">
